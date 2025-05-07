@@ -17,7 +17,7 @@ public class App
     	
     	ApplicationContext context= new ClassPathXmlApplicationContext("com/aop/config.xml");
     	PaymentService obj= context.getBean("payment",PaymentService.class);
-    	obj.makePayment();
+    	obj.makePayment(36);
     	
     }
 }

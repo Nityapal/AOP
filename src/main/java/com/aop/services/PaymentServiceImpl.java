@@ -3,12 +3,12 @@ package com.aop.services;
 public class PaymentServiceImpl implements PaymentService{
 
 	@Override
-	public void makePayment() {
+	public void makePayment(int amt) {
 		
 		//payment code
-		System.out.println("amount debited..");
+		System.out.println(amt+ " amount debited..");
 		//process
-		System.out.println("amount credited..");
+		System.out.println(amt+ " amount credited..");
 		
 	}
 
